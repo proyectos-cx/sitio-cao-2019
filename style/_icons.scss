@@ -1,0 +1,736 @@
+/*
+  ===================== Iconos =====================
+*/
+
+@font-face {
+  font-family: 'vtr-icons';
+  src:  url('../fonts/vtr-icons.eot?xfzi9');
+  src:  url('../fonts/vtr-icons.eot?xfzi9#iefix') format('embedded-opentype'),
+  url('../fonts/vtr-icons.ttf?xfzi9') format('truetype'),
+  url('../fonts/vtr-icons.woff?xfzi9') format('woff'),
+  url('../fonts/vtr-icons.svg?xfzi9#vtr-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] { 
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vtr-icons', sans-serif !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-text{
+  i{
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+//Tamaños
+
+.icon {
+  vertical-align: middle;
+    &-xs {
+    font-size: 12px!important;
+    width: 20px;
+  }
+
+  &-s {
+    font-size: 16px!important;
+  }
+  &-m {
+    font-size: 20px!important;
+  }
+  &-ml{
+    font-size: 29px !important;
+  }
+  &-l {
+    font-size: 36px!important;
+  }
+  &-xl {
+  font-size: 60px!important;
+  }
+  
+  /*colores*/
+  
+  &-color-alert{
+    color: $color-alert;
+  }
+  
+  &-color-grey{
+    color: $color-gray;
+  }
+  
+  &-color-light-grey{
+    color: $color-gray-light;
+  }
+  
+  &-color-error{
+    color: $color-red;
+  }
+  
+  &-color-success{
+    color: $color-success;
+  }
+  
+  &-color-primary{
+    color: $color-primary;
+  }
+  
+}
+
+a >, li > {
+  [class*="icon-"]  + span {
+    padding-left: $margen;
+    vertical-align: middle;
+  }
+}
+
+i{
+  &.auto-cent{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+  
+  &.alert-icon{
+    font-size: 62px;
+    color: $color-primary;
+  }
+}
+
+
+.radius-icon {
+  @include border-radius(100%);
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  background: $color-green;
+}
+
+.icon-filter:before {
+  content: "\e965";
+}
+
+/**/
+
+
+.icon-nav-arrow-left:before {
+  content: "\e972";
+}
+.icon-nav-arrow-right:before {
+  content: "\e973";
+}
+
+
+/**/
+
+.icon-world-two:before {
+  content: "\e96a";
+}
+.icon-mail-two:before {
+  content: "\e96b";
+}
+.icon-text-chat-two:before {
+  content: "\e96c";
+}
+.icon-music-two:before {
+  content: "\e96d";
+}
+.icon-apps-two:before {
+  content: "\e96e";
+}
+.icon-videocall-two:before {
+  content: "\e96f";
+}
+.icon-youtube-two:before {
+  content: "\e970";
+}
+.icon-videogaming-two:before {
+  content: "\e971";
+}
+
+/**/
+
+.icon-processor-two:before {
+  content: "\e966";
+}
+.icon-ram:before {
+  content: "\e967";
+}
+.icon-android:before {
+  content: "\e968";
+}
+.icon-internal-memory:before {
+  content: "\e969";
+}
+
+/**/
+
+.icon-alert-2:before {
+  content: "\e964";
+}
+
+/**/
+
+.icon-doblepacks:before {
+  content: "\e962";
+}
+.icon-triplepacks:before {
+  content: "\e963";
+}
+
+/**/
+
+.icon-all-packs:before {
+  content: "\e960";
+}
+.icon-telefonia-2:before {
+  content: "\e961";
+}
+
+
+/**/
+
+.icon-beamforming:before {
+  content: "\e95d";
+  //color: #686868;
+}
+.icon-tools:before {
+  content: "\e95e";
+  //color: #686868;
+}
+.icon-medidor:before {
+  content: "\e95f";
+  //color: #686868;
+}
+
+/**/
+
+.icon-cellphone-screen:before {
+  content: "\e95b";
+  color: #686868;
+}
+.icon-cellphone-memory:before {
+  content: "\e95c";
+  color: #686868;
+}
+
+
+
+/**/
+
+.success-time-icon{
+  background: url(../../img/click-to-call-time-out.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: cover;
+  background-position: 0 0;
+  &:before{
+    display: none;
+  }
+  &.small{
+    width: 42px;
+    height: 40px;
+    left: -5px;
+    position: relative;
+  }
+}
+
+
+/**/
+
+//.icon-clave:before {
+//  content: "\e900";
+//}
+
+
+.icon-back-home-area{
+  margin-right: 14px;
+  img{
+    width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  &.fix{
+    img{
+      position: relative;
+      top: -3px;
+    }
+  }
+  
+}
+
+
+/**/
+
+.icon-return-arrow:before {
+  content: "\e95a";
+}
+
+
+/**/
+
+.icon-broadband-width:before {
+  content: "\e957";
+}
+.icon-online-games:before {
+  content: "\e958";
+}
+.icon-play-videos:before {
+  content: "\e959";
+}
+
+/**/
+
+.icon-cloud:before {
+  content: "\e94d";
+}
+.icon-transmition:before {
+  content: "\e94e";
+}
+.icon-virus:before {
+  content: "\e94f";
+}
+.icon-proxy:before {
+  content: "\e950";
+}
+.icon-big-lock:before {
+  content: "\e951";
+}
+.icon-multiple-devices:before {
+  content: "\e952";
+}
+.icon-low-signal:before {
+  content: "\e953";
+}
+.icon-old-devices:before {
+  content: "\e954";
+}
+.icon-signal:before {
+  content: "\e955";
+}
+.icon-big-cel-phone:before {
+  content: "\e956";
+}
+
+/**/
+
+.icon-chat-2:before {
+  content: "\e949";
+}
+.icon-cel-phone-2:before {
+  content: "\e94a";
+}
+.icon-laptop:before {
+  content: "\e94b";
+}
+
+.icon-bag-2:before {
+  content: "\e948";
+}
+
+/**/
+
+.icon-keys:before {
+  content: "\e947";
+}
+
+/**/
+
+
+.icon-big-i:before {
+  content: "\e943";
+}
+.icon-big-quest:before {
+  content: "\e944";
+}
+.icon-destiny:before {
+  content: "\e945";
+}
+.icon-travel-check:before {
+  content: "\e946";
+}
+
+
+/**/
+
+.icon-camera:before {
+  content: "\e93e";
+}
+.icon-gift:before {
+  content: "\e93f";
+}
+.icon-star:before {
+  content: "\e940";
+}
+.icon-print:before {
+  content: "\e941";
+}
+.icon-share:before {
+  content: "\e942";
+}
+
+
+.deploy-gift-icon{
+  color: $color-primary;
+}
+
+/**/
+
+.icon-processor:before{
+  content: "\e93d"; 
+}
+
+.icon-android-face:before{
+  content: "\e93c"; 
+}
+
+.icon-modificar:before{
+  content: "\e93b"; 
+}
+
+
+/**/
+
+.icon-mms:before {
+  content: "\e93a";
+}
+.icon-sms:before {
+  content: "\e935";
+}
+.icon-navegacion:before {
+  content: "\e936";
+}
+.icon-minutos:before {
+  content: "\e937";
+}
+.icon-cargo-fijo:before {
+  content: "\e938";
+}
+.icon-plan:before {
+  content: "\e939";
+}
+
+
+/**/
+
+.icon-compatibilidad-red:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background: url(../../img/icono-compatibilidad-red.png) center no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+
+.icon-cuatro-g-plus{
+  
+  &.small-h{
+    height: 30px;
+  }
+  
+  &:before {
+    content: '';
+    width: 70px;
+    height: 40px;
+    background: url(../../img/icono-color-4G-plus.png) center no-repeat;
+    display: inline-block;
+  }
+  
+}
+
+.icon-cuatro-g:before {
+  content: "\e934";
+}
+
+.icon-big-4g{
+  background: $color-primary;
+  width: 94px;
+  height: 94px;
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  
+  &:before{
+    content: "\e934";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white;
+    display: block;
+    width: 65px;
+    height: 30px;
+    margin: auto;
+    font-size: 30px;
+  }
+  
+}
+
+
+.icon-fat-check:before {
+  content: "\e94c";
+}
+
+
+/**/
+
+.icon-icono-dbox:before, .icon-dbox:before {
+  content: "\e933";
+}
+
+.icon-icon-vtr-vod:before, .icon-vtr-vod:before {
+  content: "\e932";
+}
+
+/**/
+
+
+.icon-circle-alert:before {
+  content: "\e931";
+}
+
+/**/
+
+
+.icon-wifi:before {
+  content: "\e92d";
+}
+.icon-escudo:before {
+  content: "\e92e";
+}
+.icon-corazon:before {
+  content: "\e92f";
+}
+
+
+
+.icon-time-out:before {
+  content: "\e930";
+}
+
+/**/
+
+
+.icon-cotizador:before {
+  content: "\e91f";
+}
+.icon-home:before {
+  content: "\e920";
+}
+.icon-mediciones:before {
+  content: "\e921";
+}
+.icon-more:before {
+  content: "\e924";
+}
+.icon-pdf:before {
+  content: "\e925";
+}
+.icon-tarifas:before {
+  content: "\e92c";
+}
+
+
+/**/
+
+.icon-ico-broadband:before, .icon-broadband:before {
+  content: "\e91e";
+}
+
+.icon-ico-guide-tv:before, .icon-guide-tv:before {
+  content: "\e922";
+}
+ 
+.icon-ico-packs:before, .icon-packs:before {
+  content: "\e923";
+}
+
+.icon-ico-payment-ballot:before, .icon-payment-ballot:before {
+  content: "\e926";
+}
+.icon-ico-services:before, .icon-services:before {
+  content: "\e927";
+}
+.icon-ico-telephony-movil:before, .icon-telephony-movil:before {
+  content: "\e928";
+}
+.icon-ico-tv:before, .icon-tv:before {
+  content: "\e929";
+}
+.icon-icon-other-header-internet:before, .icon-other-header-internet:before {
+  content: "\e92a";
+}
+.icon-icon-other-header-movil:before {
+  content: "\e92b";
+}
+
+
+/**/
+
+
+.icon-upload:before {
+  content: "\e91b";
+}
+.icon-download-2:before {
+  content: "\e91b";
+}
+.icon-check:before {
+  content: "\e91d";
+}
+
+.icon-info:before {
+  content: "\e91c";
+}
+.icon-close-icon:before, .icon-close:before {
+  content: "\e91a";
+}
+.icon-big-back-arrow:before {
+  content: "\e919";
+}
+.icon-mobile:before {
+  content: "\e917";
+}
+.icon-alerta:before {
+  content: "\e918";
+}
+.icon-download:before {
+  content: "\e913";
+}
+.icon-television:before {
+  content: "\e914";
+}
+.icon-telefonia:before { 
+  content: "\e915";
+}
+.icon-internet:before {
+  content: "\e916";
+}
+.icon-bullet:before {
+  content: "\e912";
+}
+.icon-canal:before {
+  content: "\e911";
+}
+.icon-producto-medida:before {
+  content: "\e90e";
+}
+.icon-servicio-tecnico-prioritario:before {
+  content: "\e90f";
+}
+.icon-flecha:before {
+  content: "\e910";
+}
+
+.icon-prev-arrow{
+  transform: rotate(180deg);
+  font-size: 12px;
+  &:before, &:after {
+    content: "\e910";
+  }
+}
+
+.icon-next-arrow{
+  font-size: 12px;
+  &:before, &:after {
+    content: "\e910";
+  }
+}
+
+.icon-ayuda-servicio:before {
+  content: "\e90c";
+}
+.icon-boleta:before {
+  content: "\e90d";
+}
+.icon-facebook:before {
+  content: "\e909";
+}
+.icon-twitter:before {
+  content: "\e90a";
+}
+.icon-youtube:before {
+  content: "\e90b";
+}
+.icon-direccion:before {
+  content: "\e908";
+}
+.icon-sucursal-virtual:before {
+  content: "\e900";
+}
+.icon-buscar:before {
+  content: "\e901";
+}
+.icon-ayuda:before {
+  content: "\e902";
+}
+.icon-chat:before {
+  content: "\e903";
+}
+.icon-mail:before {
+  content: "\e904";
+}
+.icon-sucursal:before {
+  content: "\e905";
+}
+.icon-usuario:before {
+  content: "\e906";
+}
+.icon-pago:before {
+  content: "\e907";
+}
+
+
+
+//redes
+
+.icon {
+  &-facebook {
+    color: #006BA6;
+  }
+  &-twitter {
+    color: #0088D7;
+  }
+  &-youtube {
+    color: #E93F34;
+  }
+}
+
+//flechas
+
+.up {
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+.down {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.left {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.right {
+  display: inline-block;
+  transform: rotate(-180deg);
+}
+

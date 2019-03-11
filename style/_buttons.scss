@@ -1,0 +1,90 @@
+.btn{
+  border-radius: 100px;
+  font-family: 'Conv_neo_sans_bold', sans-serif;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 20px;
+  width: auto;
+  height: auto;
+  position: relative;
+  line-height: 20px;
+  font-size: 14px;
+  min-width: 170px;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+
+  &:hover{
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+  }
+  
+      &.btn-outline{
+        border: 2px solid #FF4063;
+        color: #FF4063;
+
+        &:hover{
+            background: #FF4063;
+            color: #FFFFFF;
+        }
+
+      }
+
+       &.btn-outline-white{
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+
+          &:hover{
+            background: #FFFFFF;
+            color: #FF4063;
+          }
+      }
+
+      &.btn-primary{
+        background: #FF4063;
+        color: #ffffff;
+
+        &:hover{
+            background: #FFFFFF;
+            color: #FF4063;
+        }
+      }
+
+      &.btn-primary-white{
+        background: #FFFFFF;
+        color: #FF4063;
+
+        &:hover{
+            background: #FF4063;
+            color: #FFFFFF;
+        }
+      }
+
+  img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+  }
+
+  i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+  }
+
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 0px !important;
+  }
+  
+}

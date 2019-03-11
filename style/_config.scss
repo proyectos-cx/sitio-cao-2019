@@ -1,0 +1,580 @@
+/*
+	===================== Colores =================
+*/
+	$color-base:					#393939; //#4A4A4A;
+	$color-primary: 				#FF4063;
+	$color-primary-hover:			#dd3857;
+	$color-secondary:				#FF8800;
+	$color-bg:						#FAFAFA;
+	$color-white:					#ffffff;
+	$color-black:					#000000;
+	$color-red:						#FD250E;
+	$color-green:					#68B79D;
+	$color-offer:					#806996;
+	$color-offer-two:				#82589B;
+	$color-breadcrumb: 				#C8C8C8;
+	
+	$color-primary-shadows:			#CB354E;
+	
+	$color-primary-blue: 			#3C88B7;
+	$color-primary-deep-blue:		#17577E;
+	
+	
+	$color-green-access: 			#29915C;
+	
+	$secondary-blue:				#418FBE;
+	$third-blue: 					#0096FF;
+	
+	$color-grey-blue:				#edf1f4;
+	
+/*------------------------------------------------------------------------------Special titles */
+	
+	$color-special-titles:	 		#B62191;
+	
+
+//grises
+	$color-grey:					#262626;
+	$color-grey-dark: 				#323232;
+	$color-gray:					#747474;
+	$color-gray-light:				#9A9A9A; /*#A2A2A2;*/
+	$color-grey-light:				#F1F1F1;
+	$color-grey-light-two:			#B0B0B0;
+	$color-grey-middle: 			#EFEFEF;
+	$color-grey-list-dots:			#BBBBBB;
+	$color-initial-grey: 			#FAFAFA;
+	
+	$color-ultra-grey:				#F9F9F9;
+	
+	$color-title-deep-grey:			#393939;
+	
+	$color-pack-grey:				#F6F7FA;
+	$color-border-product-box:		#D8D8D8;
+	
+	$color-grey-capsule-a: 			#F7F7F7;
+	$color-grey-capsule-b: 			#E5E9EC;  
+	
+	$color-grey-input-border: 		#DCDCDC;
+	
+	$color-grey-deploy-mobile: 		#DEE3E9;
+	
+	$color-thead-tables: 			#E4EAEF;
+	
+	$color-ultra-light-grey:        #D8D8D8;
+	
+	$remove-item-bg:				#E5E5E5;
+	$remove-item-x-bg:				#7E7E7E;
+	
+	$color-collapsed-grey-bg:		#F4F5F6;
+	
+	$color-blue-grey:				#F6F7FA;
+	
+	$color-grey-borders:			#E9E9E9;
+	
+	$color-grey-border-two:			#DFDFDF;
+	
+	$color-bottom-light-grey:		#EEEEEE;
+	
+//colores procductos
+
+	$color-nuevos-productos:		#D0DA5B;
+	$color-premios:					#799529;
+	$color-venta-zona:				#00605B;
+	$color-vod:						#00A8EE;
+	$color-negocios:				#EB6608;
+	$color-post-venta:				#E71E64;
+	$color-venta:					#A60064;
+
+	$color-blue:					#007DC9;
+	$color-deep-blue:				#3588B6;
+	
+	$color-deep-purple:				#49479D;
+
+
+//Alertas
+	$color-success:   				#45CE60;
+	$color-alert:					#FFC200;
+	
+	$color-alert-box-b:				#EDF3F7;
+
+
+//Usuario logueado
+	$color-active-user: 			#f80;
+
+
+//Colores cuadro de equipos
+	$color-equipo-compatible-1:		#006F71;
+	$color-equipo-compatible-2:		#5C4187;
+	$color-equipo-compatible-3:		#501F62;
+	$color-equipo-compatible-4:		#360734;
+	$color-equipo-compatible-5:		#911038;
+	$color-equipo-compatible-6:		#67053C;
+	$color-equipo-compatible-7:		#350229;
+	$color-equipo-compatible-8:		#53022F;
+	
+	
+	$color-brighter-purple:			#6F2AAC;
+
+	$color-discount-blue:			#0064DC;
+	
+
+//Sombras
+	$under-light-grey-shadow:		0px 3px 0px 0px rgba(0,0,0,0.12);
+
+//New Promo capsule
+
+	$color-new-promo-capsule:		#F2F0F4;
+	$color-new-promo-capsule-border:#2290B2;
+
+
+
+/*------------------------------------------------------------------------------Colores de planes */
+
+	$plan-libre: #663F8F;
+	$plan-controlado: #0B519D;
+	$plan-multimedia-plus: #E3285C;
+	
+	$new-products-color: #923F95;
+
+
+/*------------------------------------------------------------------------------Colores ddisponibles movil */
+
+	$availability-black: #7B7B7B;
+	$availability-silver: #D8D8D8;
+	$availability-space-gray: #36373C;
+	$availability-gold: #CCBBA2;
+	$availability-titan: #C8C8C8;
+	$availability-brown: #A5824E;
+
+
+/*
+	===================== background =============
+*/
+
+/* ===================== Color-CAO ================ */
+	
+	$bg-color-gradient-prymary: linear-gradient(-45deg, #C03C8B 0%, #4C16F8 100%);
+
+/* ===================== Color-CAO ================ */
+
+
+
+.bg {
+	&-black {
+		background-color: $color-black;
+	}
+	&-primary {
+		background-color: $color-primary;
+	}
+	&-secondary {
+		background-color: $color-secondary;
+	}
+	&-grey {
+		background-color: $color-grey;
+	}
+	&-white {
+		background-color: $color-white;
+	}
+	
+	&-blue-grey{
+		background: $color-blue-grey;
+	}
+	
+	&-cao{
+		background: url(../../img/bg-cao.jpg) center no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		&.bg-cao-negocios{
+			background: url(../../img/bg-cao-negocios.jpg) center no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+	}
+	&-grey-middle{
+		background-color: $color-grey-middle;
+	}
+	&-grey-light {
+		background-color: $color-grey-light;
+	}
+	&-grey-ultra-light{
+		background-color: $color-ultra-grey;
+	}
+	&-grey-light-2{
+		background-color: $color-grey-capsule-a;
+	}
+	&-grey-dark {
+		background-color: $color-grey-dark;
+	}
+	&-nuevos-productos {
+		background-color: $color-nuevos-productos;
+	}
+	&-premios {
+		background-color: $color-premios;
+	}
+	&-venta-zona {
+		background-color: $color-venta-zona;
+	}
+	&-vod {
+		background-color: $color-vod!important;
+	}
+	&-negocios {
+		background-color: $color-negocios;
+	}
+	&-post-venta {
+		background-color: $color-post-venta;
+	}
+	&-venta {
+		background-color: $color-venta;
+	}
+	&-purple{
+		background-color: $color-offer;
+	}
+	&-initial-grey{
+		//$color-initial-grey;
+	}
+	&-initial-grey-two{
+		background-color: $color-initial-grey;
+	}
+	
+	&-eq-compatible-1{
+		background: $color-equipo-compatible-1;
+	}
+	&-eq-compatible-2{
+		background: $color-equipo-compatible-2;
+	}
+	&-eq-compatible-3{
+		background: $color-equipo-compatible-3;
+	}
+	&-eq-compatible-4{
+		background: $color-equipo-compatible-4;
+	}
+	&-eq-compatible-5{
+		background: $color-equipo-compatible-5;
+	}
+	&-eq-compatible-6{
+		background: $color-equipo-compatible-6;
+	}
+	&-eq-compatible-7{
+		background: $color-equipo-compatible-7;
+	}
+	&-eq-compatible-8{
+		background: $color-equipo-compatible-8;
+	}
+	&-plan-libre{
+		background: $plan-libre;
+	}
+	&-plan-controlado{
+		background: $plan-controlado;
+	}
+	&-plan-multimedia-plus{
+		background: $plan-multimedia-plus;
+	}
+
+	// COLORES DISPONIBLE MOVIL
+	&-movil-black {
+		background: $availability-black;
+	}
+	&-movil-silver {
+		background: $availability-silver;
+	}
+	&-movil-space-gray {
+		background: $availability-space-gray;
+	}
+	&-movil-gold {
+		background: $availability-gold;
+	}
+	&-movil-titan {
+		background: $availability-titan;
+	}
+	&-movil-brown {
+		background: $availability-brown;
+	}
+	
+}
+
+.collapsed{
+	&.collapsed-grey-bg{
+		background: $color-collapsed-grey-bg;
+	}
+}
+
+.color {
+	&-primary {
+		color: $color-primary;
+	}
+	&-white {
+		color: $color-white;
+	}
+	&-black {
+		color: $color-black;
+	}
+	&-gray-light {
+		color: $color-gray-light;
+	}
+	&-nuevos-productos {
+		color: $color-nuevos-productos;
+	}
+	&-blue{
+		color: $color-blue !important;
+	}
+	&-premios {
+		color: $color-premios;
+	}
+	&-venta-zona {
+		color: $color-venta-zona;
+	}
+	&-vod {
+		color: $color-vod;
+	}
+	&-negocios {
+		color: $color-negocios;
+	}
+	&-post-venta {
+		color: $color-post-venta;
+	}
+	&-venta {
+		color: $color-venta;
+	}
+	&-offer{
+		color: $color-offer;
+	}
+	&-light-grey{
+		color: $color-grey-light-two;
+	}
+	&-success{
+		color: $color-success;
+	}
+	&-alert{
+		color: $color-alert;
+	}
+
+	&-deep-grey{
+		color: $color-gray;
+	}
+	
+	&-new-products{
+		color: $new-products-color;
+	}
+	
+	&-special-title{
+		color: $color-special-titles;
+	}
+	
+	&-title-deep-grey{
+		color: $color-title-deep-grey;
+	}
+	
+}
+
+
+
+/*
+	===================== Base =====================
+*/
+	$font-size-base: 		16px;
+	$font-family-base: 		'Conv_NeoSansStd Regular', sans-serif;
+	$font-family-bold:		'Conv_neo_sans_bold', sans-serif;
+
+/*
+	===================== Base =====================
+*/
+	//Line height base
+	$line-height-base: 140%;
+
+/*
+	===================== font-weight ==============
+*/
+
+	$font-weight-normal:    	400;
+	$font-weight-bold:    		600;
+
+
+
+/*
+	=====================     Mixin ================
+*/
+	@mixin border-radius($radius) {
+	  			border-radius: $radius;
+	  		 -o-border-radius: $radius;
+	  		-ms-border-radius: $radius;
+	  	   -moz-border-radius: $radius;
+	  	-webkit-border-radius: $radius;
+	}
+
+
+	@mixin box-shadow($top, $left, $blur, $color) {
+
+		-webkit-box-shadow:$top $left $blur $color;
+		-moz-box-shadow:$top $left $blur $color;
+		box-shadow:$top $left $blur $color;
+	}
+
+	@mixin opacity($opacity) {
+	  opacity: $opacity;
+	  $opacity-ie: $opacity * 100;
+	  filter: alpha(opacity=$opacity-ie); //IE8
+	}
+
+	@mixin triangle($direction, $width, $height, $color) {
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		@if $direction == top {
+			border-left: ($width / 2) solid transparent;
+			border-right: ($width / 2) solid transparent;
+			border-bottom: $height solid $color;
+		} @else if $direction == bottom {
+			border-left: ($width / 2) solid transparent;
+			border-right: ($width / 2) solid transparent;
+			border-top: $height solid $color;
+		} @else if $direction == left {
+			border-top: ($width / 2) solid transparent;
+			border-bottom: ($width / 2) solid transparent;
+			border-right: $height solid $color;
+		} @else if $direction == right {
+			border-top: ($width / 2) solid transparent;
+			border-bottom: ($width / 2) solid transparent;
+			border-left: $height solid $color;
+		}
+	}
+
+
+	@mixin offset-margin($margin, $value){
+		margin-#{$margin}: $value!important;
+	}
+
+	@mixin offsety-margin($margin, $value){
+		margin-#{$margin}: -$value!important;
+	}
+
+	@mixin set-bg-img($cool_url, $fallback_url) {
+		background-image: $cool_url;
+		.no-svg & {
+			background-image: $fallback_url;
+		}
+	}
+
+	@mixin linear-gradient($direction, $color-stops...) {
+		@if is-direction($direction) == false {
+			$color-stops: $direction, $color-stops;
+			$direction: 180deg;
+		}
+
+		background: nth(nth($color-stops, 1), 1);
+		background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+		background: linear-gradient($direction, $color-stops);
+	}
+
+
+	@mixin gradient-radial($inner-color, $outer-color) {
+		background-image: -webkit-radial-gradient(circle, $inner-color, $outer-color);
+		background-image: radial-gradient(circle, $inner-color, $outer-color);
+		background-repeat: no-repeat;
+	}
+
+
+	@for $i from 1 through 12 {
+		@each $margin in top, left, bottom, right {
+
+			.vtr-offset-#{$margin}-#{$i}{
+				@include offset-margin($margin, 10px * $i)
+			}
+
+			.vtr-offsety-#{$margin}-#{$i}{
+				@include offsety-margin($margin, 10px * $i)
+			}
+
+		}
+	}
+	
+	//Global paddings
+
+	@for $i from 1 through 5 {
+	   .pad-right-#{$i*10} { padding-right: 10px * $i; }
+	}
+	@for $i from 1 through 5 {
+	   .pad-left-#{$i*10} { padding-left: 10px * $i; }
+	}
+	@for $i from 1 through 5 {
+	   .pad-top-#{$i*10} { padding-top: 10px * $i; }
+	}
+	@for $i from 1 through 5 {
+	   .pad-bottom-#{$i*10} { padding-bottom: 10px * $i; }
+	}
+	
+	
+	@for $i from 1 through 5 {
+		.right-#{$i*10} { right: 10px * $i; }
+	}
+	@for $i from 1 through 5 {
+		.left-#{$i*10} { left: 10px * $i; }
+	}
+	@for $i from 1 through 5 {
+		.top-#{$i*10} { top: 10px * $i; }
+	}
+	@for $i from 1 through 5 {
+		.bottom-#{$i*10} { bottom: 10px * $i; }
+	}
+
+
+	@mixin input-placeholder {
+		&.placeholder { @content; }
+		&:-moz-placeholder { @content; }
+		&::-moz-placeholder { @content; }
+		&:-ms-input-placeholder { @content; }
+		&::-webkit-input-placeholder { @content; }
+	}
+
+	
+
+
+/*
+	===================== fin Mixin =====================
+*/
+
+
+/*
+	===================== font-size =====================
+*/
+	$font-size-h1: 50px;
+	$font-size-h2: 32px;
+	$font-size-h3: 25px;
+	$font-size-h4: 24px;
+	$font-size-h5: 20px;
+	$font-size-h6: 16px;
+/*
+	===================== fin font-size =====================
+*/
+
+/*
+	===================== mediaqueries =====================
+*/
+	$screen-xxs-min: 	 400px;
+	$screen-xs-min: 	 560px;
+	$screen-sm-min: 	 768px;
+	$screen-md-min: 	 992px;
+	$screen-l-min: 		1199px;
+	$screen-lg-min: 	1200px;
+	$screen-xl-min: 	1280px;
+/*
+	===================== mediaqueries =====================
+*/
+
+
+/*
+	===================== margenes =====================
+*/
+	$margen: 10px;
+/*
+	===================== fin margenes =====================
+*/
+
+
+h1{
+	font-size: 27px;
+
+	@media (max-width: 991px){
+		font-size: 23px;
+	}
+}
+
