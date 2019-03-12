@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="7.19999938" cy="7.19999938" r="7.19999938"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(-1202.000000, -32.000000)">
+            <g id="Group-6">
+                <g id="Group-21" transform="translate(1132.000000, 29.000000)">
+                    <g id="Group-7" transform="translate(70.000000, 3.000000)">
+                        <circle id="Oval-6" stroke="#FFFFFF" stroke-width="0.719999938" cx="7.75999331" cy="7.79999907" r="7.19999938"></circle>
+                        <g id="Rectangle-14" transform="translate(0.559994, 0.600000)"></g>
+                        <g id="Group-5" transform="translate(0.559994, 0.600000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <rect id="Rectangle-14" fill="#FFFFFF" mask="url(#mask-2)" x="-1.43999988" y="-1.43999988" width="9.35999919" height="17.9999985"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

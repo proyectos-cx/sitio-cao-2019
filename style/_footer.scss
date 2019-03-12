@@ -1,3 +1,122 @@
-
-
 /*------------------------------------------------------------------------------Footer */
+.footer-cao{
+    width: 100%;
+    display: block;
+    position: relative;
+    background: #000000;
+    padding: 15px 0px;
+    overflow: hidden;
+
+    &.hidde--991{
+        @media (max-width: 991px){
+            display: none;
+        }
+    }
+
+    .cont-left{
+        position: relative;
+        float: left;
+        display: block;
+        vertical-align: middle;
+
+        .align-middle{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 30px;
+
+            @media (max-width: 1199px){
+                margin-right: 10px;
+            }
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+        .logo-footer-vtr{
+            @media (max-width: 1199px){
+                width: 80px;
+            }
+        }
+
+        .rrss{
+            position: relative;
+
+            ul{
+                position: relative;
+                display: block;
+                vertical-align: middle;
+
+                li{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+
+                    a{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .submenu{
+            position: relative;
+
+            ul{
+                display: block;
+                position: relative;
+                vertical-align: middle;
+
+                li{
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    font-size: 12px;
+                    color: #9A9A9A;
+                    margin-right: 5px;
+                    border-right: 1px solid #9A9A9A;
+                    padding-right: 8px;
+
+                    &:first-child{
+                        border-right: none;
+                        padding-right: 0px;
+                    }
+
+                    &:last-child{
+                        padding-right: 0px;
+                        margin-right: 0px;
+                        border-right: none;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    .cont-right{
+        position: relative;
+        float: right;
+        display: block;
+        vertical-align: middle;
+
+        .logo-spnsr{
+            display: block;
+            vertical-align: middle;
+
+            a{
+                img{
+                    @media (max-width: 1199px){
+                        display: block;
+                        vertical-align: middle;
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
