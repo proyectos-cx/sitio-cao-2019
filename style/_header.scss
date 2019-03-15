@@ -269,6 +269,10 @@
             width: 590px;
             display: block;
             margin: auto;
+
+            @media (max-width: 648px){
+                width: 100%;
+            }
         }
     }
 }
@@ -278,7 +282,7 @@
     display: block;
     vertical-align: middle;
     text-align: center;
-
+    z-index: 4;
 
     ul{
         display: table;
@@ -303,13 +307,18 @@
             vertical-align: middle;
             display: table-cell;
             text-align: center;
-            width: 160px;
+            width: 162px;
             height: 100%;
             font-size: 13px;
             border-right: 1px solid #E1E1E1;
 
             @media (max-width: 1150px){
                 width: 135px;
+                font-size: 12px;
+            }
+
+            @media (max-width: 1199px){
+                width: 134px;
                 font-size: 12px;
             }
 
@@ -517,7 +526,7 @@
                 right: 0px;
                 top: 26px;
                 background: #FFFFFF;
-                z-index: 4;
+                z-index: 6;
                 padding: 36px 0px 10px 0px;
                 border-radius: 6px;
                 box-shadow: 0 4px 46px -10px rgba(0, 0, 0, 0.5);

@@ -500,7 +500,7 @@ img{
   background-color: #FFFFFF;
   height: 52px;
   position: relative;
-  z-index: 5;
+  z-index: 7;
 
   .searchButton{
     position: absolute;
@@ -545,4 +545,8 @@ img{
 
   }
 
+}
+
+a{
+  outline: none;
 }
