@@ -168,14 +168,18 @@ $(function () {
         /*-----------------function-tabs-------------------*/
 
 
-        /*roll-arrow*/
-        $('.menu-sidebar .dropdown-tab').click(function () {
-            $('.menu-sidebar .dropdown-tab span img').toggleClass('active');
+        /*roll-arrow - drop-down*/
+        $('.menu-sidebar .dropdown-tab').on('click', function () {
+            $(this).find('span img').toggleClass('active');
+            $(this).next().toggleClass('show');
+        });
+
+        $('.menu-sidebar li a').not('.menu-sidebar li .drop-content li a').click(function () {
+            $('.menu-sidebar .dropdown-tab span img').removeClass('active');
+            $('.drop-content').removeClass('show');
         })
-        
         /*roll-arrow*/
 
-        $("#accordion").accordion();
     });
     
     $(window).on('load',function(){

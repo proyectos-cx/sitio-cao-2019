@@ -1173,14 +1173,24 @@ p{
 
         ul{
             overflow: hidden;
-            overflow: hidden;
-            max-height: 1000000000px;
-            height: 0;
-            -webkit-transition: all 400ms ease;
-            -moz-transition: all 400ms ease;
-            -ms-transition: all 400ms ease;
-            -o-transition: all 400ms ease;
-            transition: all 400ms ease;
+            max-height: 0px;
+            position: relative;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;;
+            -moz-transition: all .3s ease;;
+            -ms-transition: all .3s ease;;
+            -o-transition: all .3s ease;;
+
+            &.drop-content{
+                &.show{
+                    max-height: 200000000px !important;
+                    -webkit-transition: all 1.5s ease !important;
+                    -moz-transition: all 1.5s ease !important;
+                    -ms-transition: all 1.5s ease !important;
+                    -o-transition: all 1.5s ease !important;
+                    transition: all 1.5s ease !important;
+                }
+            }
 
             li{
                 border: none;
