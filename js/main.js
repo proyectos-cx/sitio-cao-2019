@@ -172,12 +172,14 @@ $(function () {
         $('.menu-sidebar .dropdown-tab').on('click', function () {
             $(this).find('span img').toggleClass('active');
             $(this).next().toggleClass('show');
+            $(this).toggleClass('drop-active');
         });
 
         $('.menu-sidebar li a').not('.menu-sidebar li .drop-content li a').click(function () {
             $('.menu-sidebar .dropdown-tab span img').removeClass('active');
             $('.drop-content').removeClass('show');
-        })
+            $('.menu-sidebar .dropdown-tab').removeClass('drop-active');
+        });
         /*roll-arrow*/
 
     });

@@ -1118,12 +1118,66 @@ p{
         a{
             background: #FFFFFF;
             padding: 20px 15px;
+            -webkit-transition: all 400ms ease;
+            -moz-transition: all 400ms ease;
+            -ms-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease;
+
+            &:hover{
+                -webkit-transition: all 400ms ease;
+                -moz-transition: all 400ms ease;
+                -ms-transition: all 400ms ease;
+                -o-transition: all 400ms ease;
+                transition: all 400ms ease;
+                background: #F1F1F1;
+            }
+
+            &.active{
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    width: 5px;
+                    height: 60%;
+                    background: #43499E;
+                    display: block;
+                    margin: auto;
+                }
+            }
         }
 
         button{
             padding: 20px 40px 20px 15px;
             appearance: none;
             border: none;
+            font-family: 'Conv_NeoSansStd Regular', sans-serif;
+
+            &:hover{
+                -webkit-transition: all 400ms ease;
+                -moz-transition: all 400ms ease;
+                -ms-transition: all 400ms ease;
+                -o-transition: all 400ms ease;
+                transition: all 400ms ease;
+                background: #F1F1F1;
+            }
+
+            &.drop-active{
+                background-image: linear-gradient(-180deg, #866ECE 4%, #6C55AD 100%);
+                color: #FFFFFF;
+                font-family: 'Conv_neo_sans_bold', sans-serif;
+
+                span{
+                    img{
+                        filter: grayscale(100%) saturate(1) brightness(200%) contrast(200%);
+                        -webkit-filter: grayscale(100%) saturate(1) brightness(200%) contrast(200%);
+                    }
+                }
+            }
 
             span{
                 display: block;
@@ -1203,4 +1257,99 @@ p{
             }
         }
     }
+}
+
+.content-tabs{
+    position: relative;
+    padding-left: 20px;
+    min-height: 630px;
+    vertical-align: top;
+    display: block;
+
+    @media (max-width: 991px){
+        min-height: auto;
+    }
+
+    .entry-tabs{
+        position: relative;
+        display: block;
+        width: 100%;
+
+        .entry-title{
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+
+            h3{
+                font-size: 16px;
+                color: #747474;
+                margin-bottom: 6px;
+            }
+
+            h4{
+                font-size: 26px;
+                color: #393939;
+                font-family: 'Conv_neo_sans_bold', sans-serif;
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .entry-text{
+            width: 100%;
+            position: relative;
+            display: block;
+            
+            .list-url{
+                display: block;
+                position: relative;
+                width: 100%;
+
+                li{
+                    position: relative;
+                    display: block;
+                    margin-bottom: 20px;
+                    font-size: 17px;
+                    color: #747474;
+                    z-index: 1;
+
+                    a{
+                        color: #866ED0;
+                        -webkit-transition: all 400ms ease;
+                        -moz-transition: all 400ms ease;
+                        -ms-transition: all 400ms ease;
+                        -o-transition: all 400ms ease;
+                        transition: all 400ms ease;
+                        position: relative;
+                        padding-left: 20px;
+                        display: block;
+
+                        &::after{
+                            content: '•';
+                            position: absolute;
+                            left: 0px;
+                            top: 2px;
+                            margin: auto;
+                            display: block;
+                        }
+
+                        &:hover{
+                            color: #FF4063;
+                            -webkit-transition: all 400ms ease;
+                            -moz-transition: all 400ms ease;
+                            -ms-transition: all 400ms ease;
+                            -o-transition: all 400ms ease;
+                            transition: all 400ms ease;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.section-television{
+    margin-bottom: 100px;
 }
