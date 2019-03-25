@@ -200,6 +200,31 @@ $(function () {
         
         
     });
+
+
+    $.fn.simplyAccordion = function () {
+        var item = $(this);
+        var itemNext = $(this).next();
+        item.toggleClass('active').promise().done(function () {
+            $('.accordion-title.active').not(item).removeClass('active');
+        });
+        itemNext.toggleClass('active').promise().done(function () {
+            $('.accordion .deploy-content.active').not(itemNext).removeClass('active');
+        });
+
+    };
+
+    $(document).on('click', '[data-deploy-accordion]', function () {
+        $(this).simplyAccordion();
+    });
+    
+    $(document).on('click', '[data-deploy-accordion-abc]', function () {
+        if ($(window).width() < 992) {
+            $(this).simplyAccordion();
+        } else {
+            //do nothing
+        }
+    });
     
     
 }(jQuery));
