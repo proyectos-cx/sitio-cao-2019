@@ -4617,6 +4617,9 @@ p {
       -ms-transition: all 400ms ease;
       -o-transition: all 400ms ease;
       transition: all 400ms ease; }
+      @media (max-width: 991px) {
+        .menu-sidebar li a {
+          padding: 20px 41px 20px 20px; } }
       .menu-sidebar li a:hover {
         -webkit-transition: all 400ms ease;
         -moz-transition: all 400ms ease;
@@ -4637,6 +4640,45 @@ p {
           background: #43499E;
           display: block;
           margin: auto; }
+      .menu-sidebar li a span {
+        display: block;
+        margin: auto;
+        width: 17px;
+        height: 10px;
+        position: absolute;
+        right: 15px;
+        top: 0px;
+        bottom: 0px; }
+        .menu-sidebar li a span img {
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          top: 0px;
+          bottom: 0px;
+          margin: auto;
+          width: 12px;
+          display: block;
+          -webkit-transition: all 400ms ease;
+          -moz-transition: all 400ms ease;
+          -ms-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease;
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg); }
+          .menu-sidebar li a span img.active {
+            -webkit-transition: all 400ms ease;
+            -moz-transition: all 400ms ease;
+            -ms-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg) !important;
+            -moz-transform: rotate(180deg) !important;
+            -o-transform: rotate(180deg) !important;
+            -ms-transform: rotate(180deg) !important; }
     .menu-sidebar li button {
       padding: 20px 40px 20px 15px;
       -webkit-appearance: none;
@@ -4753,7 +4795,8 @@ p {
     .content-tabs .entry-tabs .entry-text {
       width: 100%;
       position: relative;
-      display: block; }
+      display: block;
+      margin-bottom: 20px; }
       .content-tabs .entry-tabs .entry-text .list-url {
         display: block;
         position: relative;
@@ -4789,6 +4832,39 @@ p {
               -ms-transition: all 400ms ease;
               -o-transition: all 400ms ease;
               transition: all 400ms ease; }
+      .content-tabs .entry-tabs .entry-text p {
+        font-size: 16px;
+        color: #747474;
+        margin-bottom: 20px;
+        line-height: 21px;
+        font-family: 'Conv_NeoSansStd Regular', sans-serif;
+        font-weight: 400; }
+      .content-tabs .entry-tabs .entry-text h5 {
+        color: #49479D;
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-family: 'Conv_neo_sans_bold', sans-serif; }
 
 .section-television {
-  margin-bottom: 100px; }
+  margin-bottom: 164px; }
+
+.tab-child {
+  min-height: 630px;
+  display: block;
+  vertical-align: top; }
+
+@media (max-width: 991px) {
+  .hide-in-991 {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .full-container-991 {
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important; } }
+
+.only-991 {
+  display: none; }
+  @media (max-width: 991px) {
+    .only-991 {
+      display: block; } }
