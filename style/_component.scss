@@ -122,11 +122,12 @@
     position: relative;
 
     h2{
-        font-size: 28px;
+        font-size: 26px;
+        line-height: 1;
         color: #4A4A4A;
 
         strong{
-            font-size: 36px;
+            // font-size: 26px;
         }
     }
 }
@@ -151,11 +152,13 @@
         }
 
         h2{
+            font-size: 28px;
             @media (max-width: 991px){
                 font-size: 20px;
             }
-
+            
             strong{
+                font-size: 36px;
                 @media (max-width: 991px){
                     display: block;
                     font-size: 32px;

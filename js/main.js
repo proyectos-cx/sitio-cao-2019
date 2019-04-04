@@ -138,35 +138,88 @@ $(function () {
         /*--------------selector search despliegue----------------*/
 
         /*-----------------function-tabs-------------------*/
-        $('ul.tabs').each(function () {
-
-            var $active, $content, $links = $(this).find('a');
-
-            $active = $($links.filter('[href="' + location.hash + '"]')[0] || $links[0]);
-            $active.addClass('active');
-
-            $content = $($active[0].hash);
-
-            $links.not($active).each(function () {
-                $(this.hash).fadeOut();
+        
+        if ($('.tabs .all').length) {
+            $('.tabs .all').each(function (i, obj) {
+                var item = $(obj);
+                if (item.hasClass('active')) {
+                    setTimeout(function () {
+                        item.find('a').trigger('click');
+                    }, 100);
+                }
             });
+        }
 
-            $(this).on('click', 'a', function (e) {
-                $active.removeClass('active');
-                $content.fadeOut();
+        $.fn.mobileTabs = function () {
+            var item = $(this);
+            var itemText = item.find('a').text();
+            var itemParent = item.parent();
+            var actionButton = itemParent.prev();
+            itemParent.toggleClass('active');
+            actionButton.toggleClass('active');
+            actionButton.find('.data-text').text(itemText);
 
-                $active = $(this);
-                $content = $(this.hash);
+            setTimeout(function () {
+                if ($(window).width() < 992) {
+                    $('.slick-break-box').slick('setPosition');
+                } else {
+                    //do nothing
+                }
+            }, 100);
+        };
 
-                // Make the tab active.
-                $active.addClass('active');
-                $content.fadeIn();
+        //Tabs - Default Action
+        $('.tab_content').not('pre .tab_content').hide();
 
-                e.preventDefault();
-            });
+        $('.tab_container').each(function (i, obj) {
+            var item = $(obj);
+            item.find('.tab_content:first').show();
         });
-        /*-----------------function-tabs-------------------*/
 
+        $('.tab-prod').not('pre .tab-prod').addClass('tabs-func');
+
+        $('ul.tabs li').click(function () {
+            var item = $(this);
+            item.mobileTabs();
+
+            if (!item.parents('.tabs').hasClass('goto-url')) {
+                if (item.hasClass('all')) {
+
+                    item.parents('.tabs').find('li').removeClass('active');
+                    //$('ul.tabs li').removeClass('active');
+                    item.addClass('active');
+                    item.parents('.tabs-func').find('.tab_content').fadeIn();
+
+                } else {
+
+                    if (!item.hasClass('external-url')) {
+                        item.parents('ul').find('li').removeClass('active');
+                        $(this).addClass('active');
+                        item.parents('.tabs-func').find('.tab_content').hide();
+                        var activeTab = $(this).find('a').attr('href');
+                        $(activeTab).fadeIn();
+
+                        if (item.parents('.tabs').hasClass('tabs-with-mod-hash')) {
+                            //////////////////////////////////////////////////////////////////////////////////////
+                            //Products section Adjustments 
+                            var itemTarget = item.find('a').attr('data-change-hash');
+
+                            //Change the window location hash
+                            var el = document.getElementById(itemTarget);
+                            var id = el.id;
+                            el.removeAttribute('id');
+                            window.location.hash = itemTarget;
+                            el.setAttribute('id', id);
+                        }
+                        return false;
+                    }
+                }
+            } else {
+                //do nothing
+            }
+        });
+        
+        /*-----------------function-tabs-------------------*/
 
         /*roll-arrow - drop-down*/
         $('.menu-sidebar .dropdown-tab').on('click', function () {
@@ -180,7 +233,6 @@ $(function () {
             $('.drop-content').removeClass('show');
             $('.menu-sidebar .dropdown-tab').removeClass('drop-active');
         });
-        /*roll-arrow*/
 
     });
     

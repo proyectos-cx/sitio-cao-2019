@@ -1,0 +1,315 @@
+/*
+  ===================== Accordion =====================
+*/
+
+
+
+.blur-accordion {
+    position: relative;
+    overflow: hidden;
+    max-height: 190px;
+    transition: all 300ms ease;
+    
+    &:before {
+        content: '';
+        width: 100%;
+        height: 230px;
+        //background: red;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        
+        transition: all 300ms ease;
+        
+        box-shadow: inset 0px -210px 73px -118px $color-grey-light;
+    }
+    
+    &.active{
+        max-height: 20000px;
+        
+        transition: all 1500ms ease;
+        
+        &:before{
+            opacity: 0;
+            visibility: hidden;
+            bottom: -230px;
+            
+            transition: all 600ms ease;
+        }
+    }
+    
+    &.small{
+        max-height: 100px;
+        &.active{
+            max-height: 100000px;
+        }
+    }
+    
+    .title-area{
+        padding: 0 30px;
+        @media only screen and (max-width: $screen-md-min) { 
+            padding: 0;
+        }
+    }
+    
+}
+
+
+.blur-accordion + .btn-ghost {
+    margin-top: -40px;
+    z-index: 1;
+    border-width: 1px;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+
+.blur-accordion.active + .btn-ghost {
+   margin-top: 40px;
+}
+
+
+.blur-accordion-white {
+    position: relative;
+    overflow: hidden;
+    max-height: 130px;
+    transition: all 300ms ease;
+    
+    .accordion .deploy-content.active{
+        background: $color-white !important;
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 230px;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        transition: all 300ms ease;
+        box-shadow: inset 0 -210px 73px -118px white;
+    }
+
+    &.active {
+        max-height: 100000px;
+        transition: all 1500ms ease;
+
+        &:before {
+            opacity: 0;
+            visibility: hidden;
+            bottom: -230px;
+            transition: all 600ms ease;
+        }
+    }
+}
+
+
+.deploy-blur-accordion{
+    
+    @media only screen and (max-width: $screen-sm-min) {
+        font-size: 14px;
+    }
+    
+}
+
+.overlayed-button{
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+    
+    transition: all 300ms ease;
+    
+    &.active{
+        margin-top: 30px;
+        
+        transition: all 300ms ease;
+    }
+}
+
+
+
+/*Simple accordion*/
+
+
+.accordion{
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+    &.radius-accordion {
+        
+        .accordion-title{
+            border-radius: 50px;
+            color: white;
+            border-bottom: 0;
+            
+            //&.bg-plan-libre{
+            //    background: $plan-libre;
+            //}
+            //
+            //&.bg-plan-controlado{
+            //    background: $plan-controlado;
+            //}
+            //
+            //&.bg-plan-multimedia-plus{
+            //    background: $plan-multimedia-plus;
+            //}
+            
+            background: $color-grey-light;
+            transition: all 300ms ease;
+            
+            &.active{
+                background: $plan-libre;
+                transition: all 300ms ease;
+                h3{
+                    color: $color-white;
+                    transition: all 300ms ease;
+                }
+                i{
+                    color: $color-white;
+                    transition: all 300ms ease;
+                }
+            }
+            
+            h3 {
+                font-size: 14px !important;
+                text-transform: uppercase;
+                font-weight: 400;
+                padding-top: 4px;
+                color: $plan-libre;
+                &:before{
+                    display: none;
+                }
+            }
+            
+            i {
+                color: $plan-libre;
+            }
+        }
+
+    }
+    
+    &.for-doc{
+        .accordion-title{
+            background: none;
+            border: solid 1px #ccc;
+        }
+        .deploy-content{
+            background: $color-white;
+        }
+    }
+    
+    .accordion-title {
+        width: 100%;
+        padding: 7px 30px 8px 20px;
+        background: #F4F4F4;
+        float: left;
+        margin-top: 4px;
+        position: relative;
+        
+        cursor: pointer;
+        
+        * {
+            margin: 0;
+            font-weight: 100;
+            font-size: 18px !important;
+            
+            line-height: 24px;
+        }
+
+        i{
+            position: absolute;
+            right: 20px;
+            top: 14px;
+            bottom: auto;
+            margin: auto;
+            height: 14px;
+            color: $color-primary;
+            font-size: 14px !important;
+            transform: rotate(90deg);
+            pointer-events: none;
+            
+            line-height: inherit;
+            
+            transition: all 300ms ease; 
+        }
+        
+        &.active{
+            i{
+                transform: rotate(270deg);
+                transition: all 300ms ease;
+            }
+        }
+        
+        
+        
+        
+
+        
+        
+        
+    }
+    
+    &.white-deploy{
+        .deploy-content{
+            background: white;
+        }
+    }
+    
+    .deploy-content {
+        width: 100%;
+        float: left;
+        background: #DFDFDF;
+        overflow: hide;
+        
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        
+        transition: all 300ms ease;
+        
+        
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            max-height: 50000px;
+            
+            transition: all 300ms ease;
+        }
+        
+    }
+    
+    .info {
+        padding: 20px 20px;
+    }
+    
+    &.not-pad-x{
+        .info{
+            padding: 20px 0;
+        }
+    }
+    
+}
+
+
+.small-square-grid{
+    > div{
+        width: 10%;
+        text-align: center;
+        float: left;
+        margin-right: 2px;
+        margin-left: 2px;
+        display: table-cell;
+        min-width: 45px;
+        img{
+            width: 100%;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+}
+
+

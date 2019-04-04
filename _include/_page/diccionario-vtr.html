@@ -1,50 +1,104 @@
 <main>
 
+    <div class="container">
+        <div class="breadcrumb">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="television.html">En Televisión</a>
+                </li>
+                <li>
+                    <a href="#">Diccionario VTR</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <section class="diccionario-vtr">
         <!-- breadcrumb -->
 
         <div class="container">
             <div class="row">
 
-                <p>Conoce aquí algunas palabras y términos importantes sobre tu boleta, tus productos y servicios VTR.</p>
-                
-                <div class="cont-form vtr-offset-bottom-2 full">
-                    <!-- <label for="serie">Nª Serie</label> -->
-                    <input type="text" class="col-xs-12 col-sm-4" placeholder="Ingresa una búsqueda. Ej: Internet" value="">
-                    <button type="submit" class="btn btn-primary">Buscar</button>
+                <div class="title-cao vtr-offset-bottom-2">
+                    <h2><strong>Diccionario VTR</strong></h2>
                 </div>
+                <p>Conoce aquí algunas palabras y términos importantes sobre tu boleta, tus productos y servicios VTR.<br/>
+                <strong>Usa el buscador o selecciona la letra inicial del término que quieres conocer</strong></p>
 
-                <!-- Nav ABC -->
-                <ul class="nav-abc justify-content-center">
-                    <li class="nav-abc-item"> <a class="nav-abc-link active" href="#">a</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">b</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">c</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link disabled" href="#">d</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">e</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">f</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">g</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">h</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">i</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">j</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">k</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">l</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">m</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">n</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">ñ</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">o</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">p</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">q</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">r</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">s</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">t</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">u</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">v</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">w</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">x</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">y</a> </li>
-                    <li class="nav-abc-item"> <a class="nav-abc-link" href="#">z</a> </li>
-                </ul>
-                <!--  -->
+
+
+                <!-- TABS BUSCADOR -->
+                <div class="tab-prod tab-white-b" data-break="768">
+                    <div class="vtr-cont-planes">
+
+                        <ul class="tabs not-mar-bottom tabs-auto-wdth transparent">
+                            <li>
+                                <a href="#tabs1a" class="active"> <span class="vtr-text-tabs">Usar Buscador</span> </a>
+                            </li>
+                            <li class="">
+                                <a href="#tabs2a"> <span class="vtr-text-tabs">Buscar por letra inicial</span> </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab_container">
+                            <div class="tab_content" id="tabs1a" style="display:block;">
+                                <div class="vtr-wrap-cont">
+                                    <!--  -->
+                                    <div class="cont-form full">
+                                        <input type="text" class="col-xs-12 col-sm-5" placeholder="Ingresa una búsqueda. Ej: Internet" value="">
+                                        <button type="submit" class="btn btn-primary">Buscar</button>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                            
+                            <div class="tab_content" id="tabs2a">
+                                <div class="vtr-wrap-cont">
+                                    <!-- Nav ABC -->
+                                    <ul class="nav-abc justify-content-center">
+                                        <li class="nav-abc-item"> <a class="nav-abc-link active" href="#">a</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">b</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">c</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link disabled" href="#">d</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">e</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">f</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">g</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">h</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">i</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">j</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">k</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">l</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">m</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">n</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">ñ</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">o</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">p</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">q</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">r</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">s</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">t</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">u</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">v</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">w</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">x</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">y</a> </li>
+                                        <li class="nav-abc-item"> <a class="nav-abc-link" href="#">z</a> </li>
+                                    </ul>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TABS BUSCADOR -->
+
+                <div class="title-cao vtr-offset-bottom-2">
+                    <h2><strong>Resultado de búsqueda</strong></h2>
+                    <p>Hemos encontrado 15 resultados para tu búsqueda “D” </p>
+                </div>
                 
                 <!-- Acordeon con despliegue blanco -->
                 <div class="accordion accordion--search_result white-deploy vtr-offset-bottom-2">
