@@ -24,13 +24,16 @@
     -o-transition: all 400ms ease;
     transition: all 400ms ease;
   }
+  &:focus {
+    outline: none;
+  }
   
       &.btn-outline{
-        border: 2px solid #FF4063;
-        color: #FF4063;
+        border: 2px solid $color-primary;
+        color: $color-primary;
 
         &:hover{
-            background: #FF4063;
+            background: $color-primary;
             color: #FFFFFF;
         }
 
@@ -42,27 +45,38 @@
 
           &:hover{
             background: #FFFFFF;
-            color: #FF4063;
+            color: $color-primary;
           }
       }
 
       &.btn-primary{
-        background: #FF4063;
+        background: $color-primary;
         color: #ffffff;
 
         &:hover{
             background: #FFFFFF;
-            color: #FF4063;
+            color: $color-primary;
         }
       }
 
       &.btn-primary-white{
         background: #FFFFFF;
-        color: #FF4063;
+        color: $color-primary;
 
         &:hover{
-            background: #FF4063;
+            background: $color-primary;
             color: #FFFFFF;
+        }
+      }
+
+      &.btn-disabled {
+        background-color: #EFEFEF;
+        border: solid 2px #EFEFEF;
+        color: $color-primary;
+        &:hover{
+          border: solid 2px $color-primary;
+            background: $color-primary;
+            color: $color-white;
         }
       }
 

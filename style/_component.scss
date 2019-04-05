@@ -122,9 +122,12 @@
     position: relative;
 
     h2{
-        font-size: 26px;
+        font-size: 22px;
         line-height: 1;
         color: #4A4A4A;
+        @media only screen and (min-width: $screen-md-min) { 
+            font-size: 26px;
+        }
 
         strong{
             // font-size: 26px;
@@ -395,8 +398,17 @@ h3{
 }
 
 p{
-    font-size: 16px;
+    font-size: 14px;
     color: #747474;
+    @media only screen and (min-width: $screen-md-min) { 
+        font-size: 16px;
+    }
+    small {
+        font-size: 11px;
+        @media only screen and (min-width: $screen-md-min) {
+            font-size: 14px;
+        }
+    }
 }
 
 .a-text-cao{

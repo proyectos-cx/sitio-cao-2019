@@ -31,6 +31,14 @@ body {
   
 }
 
+main {
+  padding-bottom: 20px;
+  @media (min-width: $screen-md-min) {
+    min-height: 40px;
+    padding-bottom: 50px;
+  }
+}
+
 
 .title-area-module {
     display: flex;
