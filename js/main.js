@@ -184,17 +184,19 @@ $(function () {
 
             if (!item.parents('.tabs').hasClass('goto-url')) {
                 if (item.hasClass('all')) {
-
                     item.parents('.tabs').find('li').removeClass('active');
                     //$('ul.tabs li').removeClass('active');
                     item.addClass('active');
                     item.parents('.tabs-func').find('.tab_content').fadeIn();
 
                 } else {
-
+                    
                     if (!item.hasClass('external-url')) {
+
                         item.parents('ul').find('li').removeClass('active');
+                        item.parents('ul').find('li').children('a').removeClass('active');
                         $(this).addClass('active');
+                        $(this).children('a').addClass('active');
                         item.parents('.tabs-func').find('.tab_content').hide();
                         var activeTab = $(this).find('a').attr('href');
                         $(activeTab).fadeIn();
