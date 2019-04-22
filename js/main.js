@@ -188,11 +188,11 @@ $(function () {
                     //$('ul.tabs li').removeClass('active');
                     item.addClass('active');
                     item.parents('.tabs-func').find('.tab_content').fadeIn();
+                    item.parents('.tabs-func').find('.tab-child').fadeIn();
 
                 } else {
                     
                     if (!item.hasClass('external-url')) {
-
                         item.parents('ul').find('li').removeClass('active');
                         item.parents('ul').find('li').children('a').removeClass('active');
                         $(this).addClass('active');
@@ -234,6 +234,56 @@ $(function () {
             $('.menu-sidebar .dropdown-tab span img').removeClass('active');
             $('.drop-content').removeClass('show');
             $('.menu-sidebar .dropdown-tab').removeClass('drop-active');
+        });
+
+        /* funcionalidades link y box opinion */
+        $('.menu-sidebar.only-991 li').on('click', function () {
+            $(this).parents('ul').hide();
+
+            $('.content-mobile ' + $(this).children('a').attr('href')).show();
+        });
+
+        $('.list-url li').on('click', function () {
+            $('.section-otros-servicios').fadeIn();
+            $(this).parents('main.links').hide();
+        });
+
+        $('.opinion-icons').on('click', function () {
+            if (!$('.content-likes-dislike').hasClass('active')) {
+                $('.content-likes-dislike').addClass('active');
+            }
+            $('.likeV1').hide();
+            $('.dislikeV1').hide();
+            $('.content-comments').removeClass('hidden');
+        });
+
+        $('.choose-like').on('click', function(){
+            $('.like').fadeIn();
+            $('.dislike').hide();
+            $('.sub-triangle').removeClass('dislike-triangle');
+            $('.sub-triangle').addClass('like-triangle');
+            $('.cont-textarea').attr('id',"like-comment");
+        });
+
+        $('.choose-dislike').on('click', function () {
+            $('.like').hide();
+            $('.dislike').fadeIn();
+            $('.sub-triangle').removeClass('like-triangle');
+            $('.sub-triangle').addClass('dislike-triangle');
+            $('.cont-textarea').attr('id', "dislike-comment");
+        });
+
+        $('.content-comments button').on('click', function () {
+            $('.content-done').removeClass('hidden');
+            $('.content-likes-dislike').addClass('hidden');
+            $('.content-comments').addClass('hidden');
+
+            $('.first').fadeIn('slow');
+
+            setTimeout(function () {
+                $('.first').hide('slow');
+                $('.second').fadeIn('slow');
+            }, 4000);
         });
 
     });
